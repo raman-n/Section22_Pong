@@ -27,7 +27,7 @@ for _ in range (11):
 
     while play_on:
         screen.listen()
-        time.sleep(0.003)
+        time.sleep(ball.turtle_speed)
         
         screen.onkeypress(paddle_right.move_paddle_up, "Up")
         screen.onkeypress(paddle_right.move_paddle_down, "Down")
@@ -39,8 +39,7 @@ for _ in range (11):
         if (
             ball.ycor() > 280 or 
             ball.ycor() < -280       
-            ):
-            
+            ):             
             
             ball.deflect(angle = 360)
 

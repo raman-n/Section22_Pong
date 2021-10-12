@@ -9,6 +9,7 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.set_heading()
+        self.turtle_speed = 0.005
 
 
     
